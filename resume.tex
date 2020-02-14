@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Adam Du
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoDots}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoDotsSpace}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheadingEducation}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{\Large Adam Du} & Email : \href{mailto:adam.du@outlook.co.nz}{Adam.Du@outlook.co.nz}\\
+	\href{https://www.openstreetmap.org/node/5421567814}{78 Disraeli St, Epsom, Auckland} & Mobile : 022 198 0578 \\
+	& \href{https://github.com/RobertJGabriel}{Github} - \href{https://www.linkedin.com/in/robertjamesgabriel/}{Linkedin} -\href{https://www.robertgabriel.ninja/}{Website}   -
+ \href{https://www.robertgabriel.ninja/awards}{Awards}  
+    \\
+\end{tabular*}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{\href{https://github.com/RobertJGabriel}{Experience}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{robertgabriel.ninja}{Remote}
+{Founder / Open source Engineer}{June 2018 - Present}
+\resumeItemListStart
+\resumeItemNoDots{}
+{I founded two sass companies with over 50,000 daily users. One was acquired. I maintained open-source Golang and Node modules. Created apps with over 100,000 users using AWS, Node, Golang, Vue, React and Webpack.}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{Teamwork.com}{Cork, Ireland}
+{Team Lead and Software Engineer}{January 2015 - May 2018}
+\resumeItemListStart
+\resumeItemNoDots{}
+{Lead the conversion/re-architecture of the Teamwork.com website and platform to a  Jamstack(Knockout) PWA design. Reducing page load times from an average of 5 seconds to an average of fewer than 2 seconds. Developed into a PWA, API endpoints written in Golang and Coldfusion.}
+\resumeItemNoDots{}
+{Designed and implemented a modern continuous deployment system. Use Including staging/production builds, unit tests, Docker, Kubernetes and Travis.}
+\resumeItemNoDots{}
+{I managed a team of four engineers, one designer. Including time off requests, interviewing potential interns, reviewing code and ensuring the team delivers tasks on time.}
+\resumeItemNoDots{}
+{Frequently use various services. AWS, S3, Travis, Kubernetes, Lambda, Jest, lighthouse and Docker.}    
+\resumeItemNoDots{}
+{Reduced the time between development to release of the application from 20 minutes to under 10 minutes by improving the build portion of our continuous integration using Docker, Kubernetes, Unit tests and Travis.}   
+\resumeItemNoDots{}
+{Built a Node module that automated the translation of the text of web pages from English to several other languages. Using the i18 specification.}   
+\resumeItemListEnd
+
+{Software Engineer}
+\resumeItemListStart
+\resumeItemNoDots{}{Implemented mBrketing tools and features within the products, website and blog.}
+\resumeItemNoDots{}{Developed a Golang based API documentation generator.}
+\resumeItemNoDots{}{Developed improvements to the Teamwork Projects importer that allows users to import their data from competitors directly.}
+\resumeItemNoDots{}{Responsibilities included creating PHP, Coldfusion and Golang based server-side solutions, implemented a signup page used by millions, developed front-end solutions, CSS, Javascript and SEO improvements.}
+      
+\resumeItemListEnd
+
+\resumeSubheading
+{Engineering Internships}{}
+{Microsoft, Dell/EMC, Horner APG and Teamwork.com}{January 2010 - January 2015}
+\resumeItemListStart
+\resumeItemNoDotsSpace{Teamwork.com (January 2015 – September 2015)}
+{}
+\resumeItemNoDotsSpace{Rubicon Center (July 2013 – September 2013)}
+{}
+\resumeItemNoDotsSpace{Dell/EMC (July 2012 – September 2012, July 2013 – September 2013)}
+{}
+\resumeItemNoDotsSpace{Microsoft (February 2011 – March 2011)}
+{}
+\resumeItemNoDotsSpace {More details available on \href{robetgabriel.ninja/work}{robetgabriel.ninja/work}}{}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{\href{https://robertgabriel.ninja/education}{Education}}
+
+\resumeSubHeadingListStart
+\resumeSubheadingEducation
+{University of Canterbury}{Christchurch, New Zealand}
+{Bachelor of Science in Computer Science}{Jan 2015 - Apr 2018}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{\href{https://robertgabriel.ninja/projects}{Projects}}
+\resumeSubHeadingListStart
+\resumeSubItem{Projects}
+{\href{https://github.com/OpenDyslexic/}{OpenDyslexic for Chrome}, 
+\href{https://github.com/helperbird/}{Helperbird}, 
+\href{https://github.com/RobertJGabriel/netflix-hidden-menu}{Netflix Hidden Categories}, 
+\href{https://github.com/yvasiyarov/swagger}{Swagger for Golang}, \href{https://github.com/robertjgabriel/xbox-dvr}{Xbox One DVR}, \href{https://github.com/robertjgabriel/Google-profanity-words}{Google profanity}.
+	\href{https://www.robertgabriel/apps/}{More on robertgabriel/apps}.
+}
+\resumeSubHeadingListEnd
+
+
+%--------SKILLS------------
+\section{\href{https://robertgabriel.ninja/\#skills}{Skills}}
+\resumeSubHeadingListStart
+\resumeSubItem{Languages}{Html, JavaScript(ES6, React, Vue.js, Redux), CSS, .NET Core, ASP.NET, PWA, Service workers, NPM, Webpack, SQL, Coldfusion, PHP and Node.js.}
+
+\resumeSubItem{Technologies}{Firebase, NoSQL, Serverless, Express.js, Mongo.DB, AWS, Git, Babel, Jest, Puppeteer, Kubernetes, Chrome, Netify,  Linux, Webpack, Seleniumg, methodologies (Agile,
+Scrum, Kanban) and Docker}
+\resumeSubHeadingListEnd
+
+
+%-----------AWARDS-----------------
+\section{\href{https://robertgabriel.ninja/awards}{Awards \& Honours}}
+\resumeSubHeadingListStart
+\resumeSubItem{Awards \& Honours}{12 Engineering awards, 8 workplace awards, 5 Scholar awards, 5 talks given and 3 grants.}
+
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
